@@ -1,0 +1,13 @@
+Loaded 2880 rows from data/flood_season_simulated.csv
+Train rows: 2304  |  Test rows: 576
+
+=== Model Comparison (lower RMSE is better) ===
+RandomForest | RMSE = 0.0422 m | MAE = 0.0338 m | R2 = 0.8925
+XGBoost      | RMSE = 0.0426 m | MAE = 0.0335 m | R2 = 0.8902
+Lacey        | RMSE = 0.0593 m | MAE = 0.0500 m | R2 = 0.7874
+
+Saved best model (RandomForest) to models/scour_model.joblib
+Saved chart to outputs/predicted_vs_actual.png
+Saved chart to outputs/feature_importance.png
+
+Done. Next: streamlit run app.py
